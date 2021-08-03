@@ -1,4 +1,4 @@
-
+ 
 const MAP=new Map(); // Stores all the tasks in a map
 
 //displays the selected option on the input field menu
@@ -161,4 +161,11 @@ function erase()//clearing  task area
         alert("There are no tasks present.")
     }
 }
- 
+ //preloader part
+
+ var preloader=document.querySelector(".loader");
+    window.addEventListener("load",vanish());
+function vanish()
+{
+    preloader.classList.add('disappear');
+};
